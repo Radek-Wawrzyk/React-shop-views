@@ -1,0 +1,78 @@
+
+.header {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+//User panel
+
+.user-panel {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 50px 0;
+}
+.user-panel button {
+  margin: 0 5px;
+}
+.user-panel .btn-search {
+  margin: 0 20px;
+}
+
+//navigation 
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//Navigation logo
+
+.navigation-logo {
+  width: 80px;
+  height: 80px;
+}
+.navigation-logo a {
+  display: block;
+}
+.navigation-logo img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+//navigation menu 
+
+.navigation-menu {
+  display: flex;
+}
+.navigation-menu li {
+  position: relative;
+}
+.navigation-menu li::before {
+  content: "◆";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $gold;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.navigation-menu li:hover::before {
+  opacity: 1;
+}
+.navigation-menu li a {
+  position: relative;
+  display: block;
+  color: $grey;
+  font-size: 20px;
+  padding: 10px 16px;
+  font-family: "sofiapro-light";  
+}
+.navigation-menu li a:hover, .navigation-menu li a:focus {
+  font-weight: bold;
+}

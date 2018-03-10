@@ -1,0 +1,21 @@
+//Font
+@font-face {
+  font-family: 'sofiapro-light';
+  src: url('../font/sofiapro-light-webfont.woff2') format('woff2'),
+       url('../font/sofiapro-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "sofiapro-light";
+}
+
+h1 {font-size: 36px;}
+h2 {font-size: 32px;}
+h3 {font-size: 28px;}
+h4 {font-size: 24px;}
+h5 {font-size: 20px;}
+h6 {font-size: 18px;}
+p {font-size: 16px}
+
+a {text-decoration: none;}
