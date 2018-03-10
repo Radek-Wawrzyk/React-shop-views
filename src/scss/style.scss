@@ -1,11 +1,11 @@
 //Setting file
+@import "settings";
 
-
+//Common components
 @import "typography";
-@import "colors";
-
+@import "navigation";
+@import "buttons";
 
 //Components
 
-@import "navigation";
-@import "buttons";
+@import "slider";
