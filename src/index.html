@@ -14,7 +14,7 @@
   <header class="header">
     <div class="user-panel">
       <button class="btn-search">
-        <span class="fas fa-search" aria-hidden="true"></span>
+        <span class="fa fa-search" aria-hidden="true"></span>
       </button>
       <button class="btn-singin">Zaloguj</button>
       <button class="btn-singup">Rejestracja</button>
@@ -27,6 +27,9 @@
           <img src="http://www.pngmart.com/files/4/Rolex-Logo-PNG-File.png" alt="watchshop logo">
         </a>
       </figure>
+      <button class="navigation-button" aria-label="navigation menu button" aria-expanded="false" aria-controls="navigation-menu-mobile">
+        <span></span>
+      </button>
       <ul class="navigation-menu">
         <li>
           <a href="#">Strona główna</a>
@@ -42,6 +45,47 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Mobile navigation menu -->
+    <nav class="mobile-menu">
+      <ul class="mobile-menu-list">
+        <li>
+          <a href="#">
+            <span class="fa fa-home" aria-hidden="true"></span>
+            <p>Strona główna</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="fa fa-users" aria-hidden="true"></span>
+            <p>Produkty</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="fa fa-shopping-bag" aria-hidden="true"></span>
+            <p>o nas</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="fa fa-phone" aria-hidden="true"></span>
+            <p>Kontakt</p>
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-menu-user-panel">
+        <button class="btn-singin">Zaloguj</button>
+        <button class="btn-singup">Zarejestruj</button>
+      </div>
+      <footer class="mobile-menu-footer">
+        <ul>
+          <li>◇</li>
+          <li>◇</li>
+          <li>◇</li>
+        </ul>
+      </footer>
+    </nav>
   </header>
 
   <main>
@@ -52,13 +96,22 @@
             <h2 class="slider-content-title">Super duper zegarek!</h2>
             <p class="slider-content-description">Zegarek z najwyższej jakości materiałów</p>
             <div class="slider-content-payment">
-              <button class="">Kup teraz</button>
-              <p class="content-price">10.000 zł</p>
+              <button class="btn-buy">Kup teraz</button>
+              <p class="slider-content-price">10.000 zł</p>
             </div>
           </div>
           <div class="slider-img">
             <img src="https://www.pngarts.com/files/1/Rolex-PNG-Transparent-Image.png" alt="rolex yacht model">
+            <img src="https://www.pngarts.com/files/1/Rolex-PNG-Transparent-Image.png" alt="rolex yacht model opacity reflection ">
           </div>
+          <div class="search-helper">
+            <button class="btn-search-helper">Wyszukaj podobny produkt</button>
+            <div class="search-helper-box"></div>
+          </div>
+          <a class="scroll-to" href="#">
+            <p>Oferta</p>
+            <span class="fa fa-angle-down" aria-hidden="true"></span>
+          </a>
         </li>
       </ul>
       <ul class="slider-dots">
@@ -66,7 +119,10 @@
         <li></li>
         <li></li>
       </ul>
-      
+    </section>
+
+    <section style="height: 2000px;">
+      xs
     </section>
   </main>
 
