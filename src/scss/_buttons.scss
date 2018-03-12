@@ -39,3 +39,24 @@ button:hover {
 .btn-search span {
   color: white;
 }
+.btn-buy {
+  border: 1px solid $grey;
+  padding: 10px 40px;
+  transition: background 0.4s, color 0.4s;
+}
+.btn-buy:hover, .btn-buy:focus {
+  background: $grey;
+  color: white;
+}
+.btn-search-helper {
+  background: $grey;
+  padding: 10px 20px;
+  color: $gold;
+  font-size: 16px
+}
+
+@media screen and (max-width: 576px) {
+  .btn-buy {
+    padding: 10px 20px;
+  }
+}

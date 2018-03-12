@@ -1,9 +1,12 @@
 
 .header {
   width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: white;
 }
 
 //User panel
@@ -75,4 +78,78 @@
 }
 .navigation-menu li a:hover, .navigation-menu li a:focus {
   font-weight: bold;
+}
+
+//navigation button 
+
+.navigation-button {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+.navigation-button span {
+  width: 22px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: $grey;
+  transition: background 0.4s;
+}
+.navigation-button span::before, .navigation-button span::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background: $grey;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.5s, left 0.5s, transform 0.5s;
+}
+.navigation-button span::before {
+  top: 8px;
+}
+.navigation-button span::after {
+  top: -8px;
+}
+.navigation-button.active span {
+  background: rgba(0,0,0,0);
+}
+.navigation-button.active span::before {
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+.navigation-button.active span::after {
+  top: 0;
+  left: 0;
+  transform: rotate(135deg);
+}
+
+
+@media screen and (max-width: 920px) {
+  .header {
+    padding: 0 30px;
+    height: 60px;
+    border-bottom: 1px solid rgba(56, 56, 56,0.2);
+  }
+  .navigation {
+    height: 100%;
+  }
+  .navigation-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .user-panel {
+    display: none;
+  }
+  .navigation-menu  {
+    display: none;
+  }
+  .navigation-button {
+    display: block;
+  }
 }

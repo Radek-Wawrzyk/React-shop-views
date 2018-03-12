@@ -8,6 +8,7 @@
 }
 * {
   font-family: "sofiapro-light";
+  line-height: 1.23;
 }
 
 h1 {font-size: 36px;}
@@ -19,3 +20,4 @@ h6 {font-size: 18px;}
 p {font-size: 16px}
 
 a {text-decoration: none;}
+a:focus {outline-color: $gold;}
