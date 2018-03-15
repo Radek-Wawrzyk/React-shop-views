@@ -130,7 +130,13 @@
   transform: rotate(135deg);
 }
 
+//Media
 
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 40px;
+  }
+}
 @media screen and (max-width: 920px) {
   .header {
     padding: 0 30px;
@@ -152,104 +158,5 @@
   }
   .navigation-button {
     display: block;
-  }
-}
-
-//Mobile Menu 
-
-.mobile-menu {
-  display: none;
-  position: fixed;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: $greyLight;
-  z-index: 120;
-  opacity: 0;
-}
-.mobile-menu::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  right: 30px;
-  width: 25px;
-  height: 12px;
-  background: $greyLight;
-  clip-path: polygon(50% 0, 0% 100%, 100% 100%);
-}
-.mobile-menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  height: 50%;
-  width: 100%;
-  max-width: 600px;
-  margin: 2px auto 0 auto;
-}
-.mobile-menu-list li {
-  width: 50%;
-  padding: 2px;
-}
-.mobile-menu-list li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  border: 2px solid $gold;    
-  transition: background 0.5s, color 0.5s; 
-}
-.mobile-menu-list li a:hover, .mobile-menu-list li a:focus{
-  background: $grey;
-  color: white;
-}
-.mobile-menu-list li a span {
-  font-size: 80px;
-  display: block;
-  width: 100%;
-}
-.mobile-menu-user-panel {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
-}
-.mobile-menu-user-panel .btn-singin, .mobile-menu-user-panel .btn-singup {
-  min-width: 150px;
-  margin: 0 10px;
-}
-.mobile-menu-footer {
-  position: absolute;
-  left: 0;
-  bottom: 10%;
-  width: 100%;
-  
-}
-.mobile-menu-footer ul {
-  display: flex;
-  justify-content: center;
-  color: $gold;
-  border-top: 1px solid $gold;
-  width: 90%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-
-//Animations
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-@keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-@media screen and (max-width: 576px) {
-  .mobile-menu-list {
-    margin: 2px 0 0 0;
   }
 }

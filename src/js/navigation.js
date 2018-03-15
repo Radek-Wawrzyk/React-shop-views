@@ -1,7 +1,7 @@
 const navigation = () => {
   const button = document.querySelector(".navigation-button");
   const menu = document.querySelector(".mobile-menu");
-  const aria = button.getAttribute("aria-expanded");
+  const body = document.querySelector("body");
 
   const close = () => {
     menu.style.animation = "fadeOut 0.4s ease-in forwards";
@@ -12,11 +12,13 @@ const navigation = () => {
     menu.addEventListener('animationend', hide);
     button.setAttribute("aria-expanded", "false");
     button.classList.remove("active");
+    body.classList.remove("active");
   }
 
   button.addEventListener("click", () => {
     button.classList.toggle("active");
     menu.classList.toggle("active");
+    body.classList.toggle("active");
     menu.style.display = "block";
     
     if (menu.classList.contains("active")) {
