@@ -1,0 +1,127 @@
+.recommended-product {
+  background: linear-gradient(45deg, #272727 10%,#595959 94%, #5a5a5a 96%);
+  height: 700px;
+}
+.product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+//Product content
+
+.product-content {
+  width: 50%;
+  text-align: right;
+  margin: 0 100px 0 0;
+}
+.product-content-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 20px 0;
+  font-size: 26px;
+}
+.product-content-description {
+  position: relative;
+  padding: 0 0 10px 0;
+  color: white;
+}
+.product-content-description::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 120%;
+  background:white; 
+}
+.product-content-description::after {
+  content: "●";
+  position: absolute;
+  left: -20%;
+  bottom: -7px;
+  color: white;
+}
+
+//Payment 
+
+.product-content-payment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 25px 0 0 0;
+}
+.product-content-price {
+  color: $goldDark;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 25px 7px 0;
+  z-index: 1;
+}
+.product-btn-buy {
+  border: 1px solid white;
+  color: white;
+  padding: 10px 40px;
+  transition: background 0.4s, color 0.4s;
+}
+.product-btn-buy:hover {
+  color: $grey;
+  background: white;
+}
+
+//Product img 
+
+.product-img {
+  width: 50%;
+  position: relative;
+}
+.product-img img {
+  width: 100%;
+  height: auto;
+}
+.product-img:last-of-type {
+  position: absolute;
+  left: 0;
+  bottom: -40%;
+  transform: scaleY(-1);
+  opacity: 0.14;
+} 
+
+//Media
+
+@media screen and (max-width: 920px) {
+  .recommended-product {
+    height: auto;
+    padding: 25px 0;
+  }
+  .product {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-img {
+    width: 75%;
+  }
+  .product-content {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .product-content-payment {
+    justify-content: center;
+  }
+  .product-content-description::before, .product-content-description::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .product-btn-buy {
+    padding: 10px 20px;
+  }
+  .product-content-price {
+    font-size: 30px;
+  }
+}
