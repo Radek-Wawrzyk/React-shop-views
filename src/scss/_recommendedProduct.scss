@@ -1,6 +1,7 @@
 .recommended-product {
   background: linear-gradient(45deg, #272727 10%,#595959 94%, #5a5a5a 96%);
   height: 700px;
+  overflow-y: hidden;
 }
 .product {
   width: 100%;
@@ -81,7 +82,7 @@
   width: 100%;
   height: auto;
 }
-.product-img:last-of-type {
+.product-img img:last-of-type {
   position: absolute;
   left: 0;
   bottom: -40%;
