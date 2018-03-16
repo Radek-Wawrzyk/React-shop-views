@@ -1,0 +1,130 @@
+
+.popular-products {
+  position: relative;
+}
+.popular-products-list {
+  margin: 25px 0;
+  display: flex;
+  padding: 0 50px;
+}
+
+
+//Single item 
+
+.product-item {
+  width: 33.3%;
+}
+.product-item a {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid transparent ;
+  transition: border 0.5s;
+  padding: 40px;  
+}
+.product-item a:hover, .product-item a:focus {
+  border: 2px solid $gold;
+  outline: none;
+}
+.item-content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+.item-content-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $grey;
+  width: 100%;
+}
+.item-content-title span {
+  color: $gold;
+}
+.item-content-price {
+  color: $gold;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+}
+.product-item:nth-child(even) .item-content {
+  order: 1;
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+.product-item:nth-child(even) .item-content .item-content-title {
+  order: 1;
+  width: 100%;
+}
+
+//item img
+
+.item-img {
+  width: 100%;
+}
+.item-img img {
+  width: 100%;
+  height: auto;
+}
+
+//Product helper search
+
+.product-search-helper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 75px 0;
+}
+.product-search-helper-box {
+  border: 1px solid $grey;
+  width: 100px;
+  margin: 0 10px 0 0;
+}
+.product-search-helper-btn {
+  background: $grey;
+  padding: 10px 20px;
+  color: $gold;
+  font-size: 16px
+}
+
+//Media 
+
+@media screen and (max-width: 920px) {
+  .popular-products-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  .product-item {
+    width: 50%;
+  }
+  .item-content {
+    text-align: center;
+    margin: 0;
+  }
+  .item-content-title {
+    font-size: 20px;
+  }
+  .item-content-price {
+    font-size: 16px;
+  }
+  .product-search-helper {
+    display: none;
+  }
+  .product-item:nth-child(even) .item-content {
+    order: inherit;
+    margin: 0;
+  }
+  .product-item:nth-child(even) .item-content .item-content-title {
+    order: inherit;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .product-item {
+    width: 100%;
+  }
+}
