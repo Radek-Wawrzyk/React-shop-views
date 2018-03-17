@@ -68,9 +68,10 @@
   padding: 10px 40px;
   transition: background 0.4s, color 0.4s;
 }
-.product-btn-buy:hover {
+.product-btn-buy:hover, .product-btn-buy:focus {
   color: $grey;
   background: white;
+  outline: none;
 }
 
 //Product img 

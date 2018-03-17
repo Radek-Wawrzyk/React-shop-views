@@ -86,7 +86,13 @@
   background: $grey;
   padding: 10px 20px;
   color: $gold;
-  font-size: 16px
+  font-size: 16px;
+  transition: background 0.5s, color 0.5s;
+}
+.product-search-helper-btn:hover, .product-search-helper-btn:focus {
+  background: $gold;
+  color: white;
+  outline: none;
 }
 
 //Media 

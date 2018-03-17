@@ -22,28 +22,36 @@
 
     <!-- Navigation -->
     <nav class="navigation">
-      <figure class="navigation-logo">
-        <a href="#">
-          <img src="./img/logo.png" alt="watchshop logo">
-        </a>
-      </figure>
-      <button class="navigation-button" aria-label="navigation menu button" aria-expanded="false" aria-controls="navigation-menu-mobile">
-        <span></span>
-      </button>
-      <ul class="navigation-menu">
-        <li>
-          <a href="#">Strona główna</a>
-        </li>
-        <li>
-          <a href="#">Produkty</a>
-        </li>
-        <li>
-          <a href="#">O nas</a>
-        </li>
-        <li>
-          <a href="#">Kontakt</a>
-        </li>
-      </ul>
+      <div class="navigation-left">
+        <figure class="navigation-logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="watchshop logo">
+          </a>
+        </figure>
+        <button  class="fa fa-search" aria-hidden="true"></button>
+      </div>
+      <div class="navigation-right">
+        <button class="fa fa-shopping-cart" aria-hidden="true">
+          <span>5</span>
+        </button>
+        <button class="navigation-button" aria-label="navigation menu button" aria-expanded="false" aria-controls="navigation-menu-mobile">
+          <span></span>
+        </button>
+        <ul class="navigation-menu">
+          <li>
+            <a href="#">Strona główna</a>
+          </li>
+          <li>
+            <a href="#">Produkty</a>
+          </li>
+          <li>
+            <a href="#">O nas</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Mobile navigation menu -->
@@ -96,7 +104,7 @@
             <h2 class="slider-content-title">Super duper zegarek!</h2>
             <p class="slider-content-description">Zegarek z najwyższej jakości materiałów</p>
             <div class="slider-content-payment">
-              <button class="btn-buy">Kup teraz</button>
+              <button class="slider-btn-buy ">Kup teraz</button>
               <p class="slider-content-price">10.000 zł</p>
             </div>
           </div>
@@ -105,7 +113,7 @@
             <img src="https://www.pngarts.com/files/1/Rolex-PNG-Transparent-Image.png" alt="rolex yacht model opacity reflection ">
           </figure>
           <div class="search-helper">
-            <button class="btn-search-helper">Wyszukaj podobny produkt</button>
+            <button class="slider-btn-search-helper">Wyszukaj podobny produkt</button>
             <div class="search-helper-box"></div>
           </div>
           <a class="scroll-to" href="#">

@@ -60,6 +60,16 @@
   font-weight: bold;
   margin: 0 0 7px 25px;
 }
+.slider-btn-buy {
+  border: 1px solid $grey;
+  padding: 10px 40px;
+  transition: background 0.4s, color 0.4s;
+}
+.slider-btn-buy:hover, .slider-btn-buy:focus {
+  background: $grey;
+  color: white;
+  outline: none;
+}
 
 //Slider img 
 
@@ -121,6 +131,19 @@
   width: 100px;
   margin: 0 0 0 10px;
 }
+.slider-btn-search-helper {
+  background: $grey;
+  padding: 10px 20px;
+  color: $gold;
+  font-size: 16px;
+  transition: background 0.5s, color 0.5s;
+}
+.slider-btn-search-helper:hover, .slider-btn-search-helper:focus {
+  background: $gold;
+  color: white;
+  outline: none;
+}
+
 
 //Slider scroll to 
 
